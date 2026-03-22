@@ -1,10 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
     <title>Landing Page</title>
     <link
@@ -16,7 +24,7 @@
       defer
     ></script>
   </head>
-  <body>
+  <body class="page__body">
     <header class="header">
       <div class="header__top">
         <a
@@ -35,30 +43,44 @@
             <li class="header__item">
               <a
                 href="#"
-                class="header__icon-link"
-              >
-                <img
-                  src="./src/img/icon-phone.png"
-                  alt="phone icon"
-                />
-              </a>
+                class="icon header__icon--phone"
+              ></a>
             </li>
             <li class="header__item">
               <a
-                href="#"
-                class="header__icon-link"
-              >
-                <img
-                  src="./src/img/icon-burger-menu.png"
-                  alt="menu icon"
-                />
-              </a>
+                href="#menu"
+                class="icon header__icon--menu"
+              ></a>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="header__center"></div>
+      <div class="header__center">
+        <h1 class="header__title">Welcome to The MET</h1>
+      </div>
     </header>
+    <aside
+      class="page-menu menu"
+      id="menu"
+    >
+      <div class="menu-content">
+        <a
+          class="header__logo-link"
+          href="#"
+        >
+          <img
+            class="header__logo-img"
+            src="./src/img/logo.png"
+            alt="mat logo"
+          />
+        </a>
+
+        <a
+          href="#"
+          class="icon header__icon--close"
+        ></a>
+      </div>
+    </aside>
     <main class="main"></main>
     <footer class="footer"></footer>
   </body>
