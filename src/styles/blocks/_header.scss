@@ -1,0 +1,35 @@
+/* #region HEADER */
+
+.header {
+  box-sizing: border-box;
+  background-image: url('../img/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header--pb {
+  padding-bottom: 290px;
+}
+
+.header__title {
+  box-sizing: border-box;
+  width: 280px;
+
+  margin: 0 auto;
+
+  font-family: Cinzel, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 43px;
+
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+
+  color: #fff;
+}
+
+/* #endregion */

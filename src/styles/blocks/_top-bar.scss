@@ -1,0 +1,32 @@
+/* #region TOP-BAR */
+.top-bar {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar--mb {
+  margin-bottom: 130px;
+}
+
+.top-bar__list {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.top-bar__logo {
+  display: block;
+}
+
+.top-bar__img {
+  display: block;
+}
+
+/* #endregion */
