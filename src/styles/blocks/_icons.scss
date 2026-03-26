@@ -1,9 +1,12 @@
 /* #region ICONS */
+@use '../utils/mixins';
+@use '../utils/vars.scss';
+
 .icon {
   box-sizing: border-box;
   display: block;
-  width: 24px;
-  height: 24px;
+  width: vars.$icon-size;
+  height: vars.$icon-size;
 }
 
 .icon--phone {

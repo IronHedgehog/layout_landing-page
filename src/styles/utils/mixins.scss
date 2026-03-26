@@ -1,0 +1,8 @@
+@use '../utils/vars.scss';
+
+@mixin hover($property, $toValue) {
+  transition: $property vars.$transition-base-time linear;
+  &:hover {
+    #{$property}: $toValue;
+  }
+}

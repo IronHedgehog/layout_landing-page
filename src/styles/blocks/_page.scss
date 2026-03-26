@@ -1,33 +1,37 @@
 /* #region PAGE */
+@use '../utils/vars.scss';
 
 .page {
-  font-family: Cinzel, serif;
-  font-size: 16px;
-  line-height: 27px;
-  color: #161616;
+  font-family: vars.$main-font-family;
+  font-size: vars.$main-font-size;
+  line-height: vars.$main-line-height;
+  color: vars.$main-color;
 
   scroll-behavior: smooth;
-}
 
-.page__body {
-  margin: 0;
-}
+  &__body {
+    min-width: 320px;
+  }
 
-.page__menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
-  height: 100vh;
+    height: 100vh;
 
-  opacity: 0;
-  pointer-events: none;
-}
+    transition: all vars.$transition-base-time linear;
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
 
-.page__menu:target {
-  opacity: 1;
-  pointer-events: all;
+    &:target {
+      transform: translateX(0%);
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
 }
 
 /* #endregion */

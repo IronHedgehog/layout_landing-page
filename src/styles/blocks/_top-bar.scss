@@ -6,27 +6,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.top-bar--mb {
-  margin-bottom: 130px;
-}
+  &--mb {
+    margin-bottom: 130px;
+  }
 
-.top-bar__list {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
+  &__list {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  &__logo {
+    display: block;
+  }
 
-.top-bar__logo {
-  display: block;
-}
-
-.top-bar__img {
-  display: block;
+  &__img {
+    display: block;
+  }
 }
 
 /* #endregion */

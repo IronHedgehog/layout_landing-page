@@ -1,5 +1,8 @@
-@import './blocks/page';
-@import './blocks/header';
-@import './blocks/icons';
-@import './blocks/top-bar';
-@import './blocks/side-bar';
+@use './utils/vars';
+@use './utils/reset';
+@use './utils/mixins';
+@use './blocks/page';
+@use './blocks/header';
+@use './blocks/icons';
+@use './blocks/top-bar';
+@use './blocks/side-bar';
