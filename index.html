@@ -1,3 +1,4 @@
+<!--  #region HEAD-->
 <!doctype html>
 <html
   lang="en"
@@ -24,39 +25,45 @@
       defer
     ></script>
   </head>
+  <!-- #endregion -->
   <body class="page__body">
+    <!-- #region HEADER+SIDE-MENU -->
     <header class="header header--pb">
-      <div class="top-bar top-bar--mb">
-        <a
-          class="top-bar__logo"
-          href="#"
-        >
-          <img
-            class="top-bar__img"
-            src="./src/img/logo.png"
-            alt="mat logo"
-          />
-        </a>
+      <div class="container">
+        <div class="header__content">
+          <div class="top-bar top-bar--mb">
+            <a
+              class="top-bar__logo"
+              href="#"
+            >
+              <img
+                class="top-bar__img"
+                src="./src/img/logo-2x.png"
+                alt="mat logo"
+              />
+            </a>
 
-        <nav class="top-bar__nav">
-          <ul class="top-bar__list">
-            <li class="top-bar__item">
-              <a
-                href="#"
-                class="icon icon--phone"
-              ></a>
-            </li>
-            <li class="top-bar__item">
-              <a
-                href="#menu"
-                class="icon icon--menu"
-              ></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header__center">
-        <h1 class="header__title">Welcome to The MET</h1>
+            <nav class="top-bar__nav">
+              <ul class="top-bar__list">
+                <li class="top-bar__item">
+                  <a
+                    href="#"
+                    class="icon icon--phone"
+                  ></a>
+                </li>
+                <li class="top-bar__item">
+                  <a
+                    href="#menu"
+                    class="icon icon--menu"
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__center">
+            <h1 class="header__title">Welcome to The MET</h1>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -64,99 +71,153 @@
       class="page__menu menu"
       id="menu"
     >
-      <div class="top-bar menu__top">
-        <a
-          class="top-bar__logo"
-          href="#"
-        >
-          <img
-            class="top-bar__img"
-            src="./src/img/logo.png"
-            alt="mat logo"
-          />
-        </a>
+      <div class="container">
+        <div class="menu__content">
+          <div class="top-bar menu__top">
+            <a
+              class="top-bar__logo"
+              href="#"
+            >
+              <img
+                class="top-bar__img"
+                src="./src/img/logo-2x.png"
+                alt="mat logo"
+              />
+            </a>
 
-        <a
-          href="#"
-          class="icon icon--close"
-        ></a>
-      </div>
-      <div class="menu__content">
-        <nav class="nav menu__nav">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a
-                href="#home"
-                class="menu__link"
-              >
-                Home
-              </a>
-            </li>
-            <li class="menu__item">
-              <a
-                href="#about-us"
-                class="menu__link"
-              >
-                About Us
-              </a>
-            </li>
-            <li class="menu__item">
-              <a
-                href="#now-on-view"
-                class="menu__link"
-              >
-                Now on view
-              </a>
-            </li>
-            <li class="menu__item">
-              <a
-                href="#explore-online"
-                class="menu__link"
-              >
-                Explore Online
-              </a>
-            </li>
-            <li class="menu__item">
-              <a
-                href="#contacts"
-                class="menu__link"
-              >
-                Contacts
-              </a>
-            </li>
-          </ul>
-        </nav>
+            <a
+              href="#"
+              class="icon icon--close"
+            ></a>
+          </div>
+          <div class="menu__content">
+            <nav class="nav menu__nav">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a
+                    href="#home"
+                    class="menu__link"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#about-us"
+                    class="menu__link"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#now-on-view"
+                    class="menu__link"
+                  >
+                    Now on view
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#explore-online"
+                    class="menu__link"
+                  >
+                    Explore Online
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#contacts"
+                    class="menu__link"
+                  >
+                    Contacts
+                  </a>
+                </li>
+              </ul>
+            </nav>
 
-        <ul class="menu__contacts">
-          <li class="menu__contact">
-            <p class="menu__contact-description">The Met Fifth Avenue</p>
+            <ul class="menu__contacts">
+              <li class="menu__contact">
+                <p class="menu__contact-description">The Met Fifth Avenue</p>
+                <a
+                  href="tel:12125357710"
+                  class="menu__contact-link"
+                >
+                  +1 212-535-7710
+                </a>
+              </li>
+              <li class="menu__contact">
+                <p class="menu__contact-description">The Met Cloisters</p>
+                <a
+                  href="tel:12129233700"
+                  class="menu__contact-link"
+                >
+                  +1 212-923-3700
+                </a>
+              </li>
+            </ul>
+
             <a
               href="tel:12125357710"
-              class="menu__contact-link"
+              class="menu__call-to-order"
             >
-              +1 212-535-7710
+              call to order
             </a>
-          </li>
-          <li class="menu__contact">
-            <p class="menu__contact-description">The Met Cloisters</p>
-            <a
-              href="tel:12129233700"
-              class="menu__contact-link"
-            >
-              +1 212-923-3700
-            </a>
-          </li>
-        </ul>
-
-        <a
-          href="tel:12125357710"
-          class="menu__call-to-order"
-        >
-          call to order
-        </a>
+          </div>
+        </div>
       </div>
     </aside>
-    <main class="main"></main>
+    <!-- #endregion -->
+    <main class="main">
+      <section
+        class="section museum-hours"
+        id="museum-hours"
+      >
+        <div class="container">
+          <div class="section__content">
+            <h2 class="title museum-hours__title museum-hours__title--mb">
+              Museum hours
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section now-on-view"
+        id="now-on-view"
+      >
+        <div class="container">
+          <div class="section__content">
+            <h2 class="title now-on-view__title now-on-view__title--mb">
+              Now On View
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section explore-online"
+        id="explore-online"
+      >
+        <div class="container">
+          <div class="section__content">
+            <h2 class="title explore-online__title explore-online__title--mb">
+              More to Explore Online
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section contacts"
+        id="contacts"
+      >
+        <div class="container">
+          <div class="section__content">
+            <h2 class="title contacts__title contacts__title--mb">
+              Contact us
+            </h2>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer"></footer>
   </body>
 </html>

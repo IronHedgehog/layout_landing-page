@@ -7,18 +7,23 @@
   display: block;
   width: vars.$icon-size;
   height: vars.$icon-size;
-}
 
-.icon--phone {
-  background-image: url('../img/icons/icon-phone.png');
-}
+  @include mixins.hover(transform, scale(1.2));
 
-.icon--menu {
-  background-image: url('../img/icons/icon-burger-menu.png');
-}
+  &--phone {
+    background-image: url('../img/icons/icon-phone.svg');
+  }
+  &--menu {
+    background-image: url('../img/icons/icon-burger-menu.svg');
 
-.icon--close {
-  background-image: url('../img/icons/icon-close.png');
+    @include mixins.hover(
+      background-image,
+      url('../img/icons/icon-burger-menu-hover.svg')
+    );
+  }
+  &--close {
+    background-image: url('../img/icons/icon-close.svg');
+  }
 }
 
 /* #endregion */

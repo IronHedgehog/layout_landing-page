@@ -1,8 +1,16 @@
 @use './utils/vars';
 @use './utils/reset';
 @use './utils/mixins';
+@use './blocks/container';
 @use './blocks/page';
 @use './blocks/header';
 @use './blocks/icons';
 @use './blocks/top-bar';
 @use './blocks/side-bar';
+@use './blocks/main';
+@use './blocks/section';
+@use './blocks/sections/museum-hours';
+@use './blocks/sections/now-on-view';
+@use './blocks/sections/explore-online';
+@use './blocks/sections/contacts';
+@use './blocks/titles';

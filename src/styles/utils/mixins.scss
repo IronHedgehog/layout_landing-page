@@ -1,8 +1,63 @@
 @use '../utils/vars.scss';
 
+@mixin on-tablet {
+  @media (min-width: vars.$tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @media (min-width: vars.$desktop-min-width) {
+    @content;
+  }
+}
+
+@mixin layout-grid {
+  $columns: 2;
+
+  display: grid;
+  column-gap: 20px;
+
+  @include on-tablet {
+    $columns: 6;
+
+    column-gap: 24px;
+  }
+
+  @include on-desktop {
+    $columns: 12;
+  }
+}
+
 @mixin hover($property, $toValue) {
   transition: $property vars.$transition-base-time linear;
   &:hover {
     #{$property}: $toValue;
+  }
+}
+
+@mixin underline-hover(
+  $color: vars.$underline-hover-bcg-color,
+  $height: vars.$underline-hover-height,
+  $bottom: vars.$underline-hover-bottom,
+  $duration: vars.$transition-base-time
+) {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: $bottom;
+    left: 0;
+    width: 100%;
+    height: $height;
+    background-color: $color;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform $duration linear;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
   }
 }

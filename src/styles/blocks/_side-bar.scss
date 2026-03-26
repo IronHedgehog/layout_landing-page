@@ -1,27 +1,23 @@
 /* #region SIDEBAR */
+@use '../utils/vars.scss';
+@use '../utils/mixins';
 
 .menu {
-  background-color: #d12;
+  background-color: vars.$menu-bg;
 
   &__content {
-    padding-inline: 20px;
     padding-bottom: 31px;
   }
 
   &__top {
-    box-sizing: border-box;
     margin-bottom: 40px;
   }
 
   &__nav {
-    margin-bottom: 32px;
+    margin-bottom: vars.$menu-spacing-bottom;
   }
 
   &__list {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -29,26 +25,26 @@
 
   &__link {
     text-decoration: none;
-    box-sizing: border-box;
-    display: block;
 
-    font-family: Cinzel, serif;
+    display: block;
+    width: fit-content;
+
+    font-family: vars.$main-font-family;
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
+
+    font-size: vars.$menu-link-size;
     line-height: 22px;
 
     letter-spacing: 2px;
     text-transform: uppercase;
 
-    color: #fff;
+    color: vars.$menu-link-color;
+
+    @include mixins.underline-hover;
   }
 
   &__contacts {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
     margin-bottom: 16px;
   }
 
@@ -57,7 +53,7 @@
   }
 
   &__contact-description {
-    font-family: Cinzel, serif;
+    font-family: vars.$main-font-family;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -66,14 +62,14 @@
     text-transform: uppercase;
     margin: 0;
 
-    // margin: 0 0 10px;
-
     color: #fff;
   }
+
   &__contact-link {
     display: block;
+    width: fit-content;
 
-    font-family: Cinzel, serif;
+    font-family: vars.$main-font-family;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -83,13 +79,15 @@
     text-transform: uppercase;
 
     color: #fff;
+
+    @include mixins.underline-hover;
   }
 
   &__call-to-order {
     display: block;
     width: fit-content;
 
-    font-family: Cinzel, serif;
+    font-family: vars.$main-font-family;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -99,20 +97,10 @@
     text-transform: uppercase;
     text-decoration: none;
 
-    padding-bottom: 8px;
-    border-bottom: 1px solid #fff;
-
     color: #fff;
+
+    @include mixins.underline-hover;
   }
 }
-
-// .menu__call-to-order::after {
-//   content: '';
-//   display: block;
-//   width: 100%;
-//   height: 1px;
-
-//   background-color: #fff;
-// }
 
 /* #endregion */

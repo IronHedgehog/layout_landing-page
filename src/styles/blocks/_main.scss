@@ -1,0 +1,7 @@
+@use '../utils/vars.scss';
+
+.main {
+  display: grid;
+  row-gap: vars.$main-gap;
+  padding-block: vars.$main-gap;
+}
