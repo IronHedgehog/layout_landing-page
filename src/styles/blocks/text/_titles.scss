@@ -1,5 +1,5 @@
-@use '../utils/vars.scss';
-@use '../utils/mixins';
+@use '../../utils/vars.scss';
+@use '../../utils/mixins';
 
 .title {
   font-family: vars.$main-font-family;
@@ -8,7 +8,6 @@
   font-size: vars.$section-title-size-sm;
   line-height: vars.$section-title-size-sm;
 
-  text-align: center;
   letter-spacing: -1.5px;
 
   color: vars.$main-color;

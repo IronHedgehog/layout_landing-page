@@ -1,0 +1,11 @@
+// smth
+// @use '../../utils/mixins';
+
+@use '../../utils/vars.scss';
+
+.button {
+  color: vars.$menu-link-color;
+  padding-block: 15px;
+
+  background: vars.$accent-main;
+}

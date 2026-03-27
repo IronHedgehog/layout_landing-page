@@ -1,5 +1,5 @@
-@use '../utils/vars.scss';
-@use '../utils/mixins.scss';
+@use '../../utils/vars.scss';
+@use '../../utils/mixins.scss';
 
 .container {
   min-width: 320px;
@@ -7,11 +7,12 @@
   padding-inline: vars.$padd-inline--sm;
 
   @include mixins.on-tablet {
+    min-width: vars.$tablet-min-width;
     padding-inline: vars.$padd-inline--md;
   }
 
   @include mixins.on-desktop {
-    max-width: 1020px;
+    max-width: vars.$desktop-min-width;
     padding-inline: vars.$padd-inline--lg;
   }
 }

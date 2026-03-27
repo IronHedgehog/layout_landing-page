@@ -1,0 +1,14 @@
+@use '../../utils/vars.scss';
+
+// @use '../../utils/mixins';
+
+.text {
+  font-family: vars.$main-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: vars.$main-font-size;
+  line-height: vars.$main-line-height;
+
+  /* Main dark */
+  color: vars.$main-color;
+}

@@ -1,6 +1,6 @@
 /* #region SIDEBAR */
-@use '../utils/vars.scss';
-@use '../utils/mixins';
+@use '../../utils/vars.scss';
+@use '../../utils/mixins';
 
 .menu {
   background-color: vars.$menu-bg;
