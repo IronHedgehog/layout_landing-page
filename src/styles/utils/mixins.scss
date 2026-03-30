@@ -66,3 +66,11 @@
     transform: scaleX(1);
   }
 }
+
+@mixin autofill-reset {
+  -webkit-text-fill-color: vars.$main-color !important;
+  -webkit-box-shadow: 0 0 0 1000px vars.$input-bcg inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+  outline: none !important;
+  background-clip: padding-box;
+}

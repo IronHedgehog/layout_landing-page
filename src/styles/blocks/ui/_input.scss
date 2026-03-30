@@ -5,9 +5,9 @@
   padding-block: 14px;
   padding-inline: 11px;
   background: vars.$input-bcg;
-  border: none;
+  border: 1px solid transparent;
   outline: none;
-  transition: border vars.$transition-base-time ease-in;
+  transition: border-color vars.$transition-base-time ease-in;
 
   &--text {
     font-family: vars.$main-font-family;
@@ -19,6 +19,7 @@
     color: vars.$main-color;
     transition: color vars.$transition-base-time ease-in;
   }
+
   &::placeholder {
     color: vars.$input-placeholder;
     transition: color vars.$transition-base-time ease-in;
@@ -32,9 +33,15 @@
     color: vars.$main-color;
   }
 
-  &:focus {
-    border: 1px solid vars.$main-color;
+  &:-webkit-autofill,
+  &:autofill {
+    @include mixins.autofill-reset;
+  }
 
-    color: vars.$main-color;
+  &:focus,
+  &:-webkit-autofill:focus,
+  &:autofill:focus {
+    border-color: vars.$main-color !important;
+    color: vars.$main-color !important;
   }
 }
