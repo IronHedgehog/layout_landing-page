@@ -45,11 +45,33 @@
 
             <nav class="top-bar__nav">
               <ul class="top-bar__list">
-                <li class="top-bar__item">
+                <li class="top-bar__item header__item--phone">
                   <a
                     href="#"
-                    class="icon icon--phone"
+                    class="icon icon--phone header__icon-phone"
                   ></a>
+                  <ul class="header__contacts">
+                    <li class="header__contact">
+                      <p class="menu__contact-description">
+                        The Met Fifth Avenue
+                      </p>
+                      <a
+                        href="tel:12125357710"
+                        class="menu__contact-link"
+                      >
+                        +1 212-535-7710
+                      </a>
+                    </li>
+                    <li class="menu__contact">
+                      <p class="menu__contact-description">The Met Cloisters</p>
+                      <a
+                        href="tel:12129233700"
+                        class="menu__contact-link"
+                      >
+                        +1 212-923-3700
+                      </a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="top-bar__item">
                   <a
@@ -391,6 +413,52 @@
         <div class="container">
           <div class="explore-online__content">
             <h2 class="title explore-online__title">More to Explore Online</h2>
+            <ul class="explore-online__list">
+              <li class="explore-online__item">
+                <img
+                  src="./src/img/explore-online/explore-online-1.webp"
+                  alt="explore1"
+                  loading="lazy"
+                  class="explore-online__img"
+                />
+                <h3 class="subtitle explore-online__subtitle">
+                  Collection Areas
+                </h3>
+                <p class="text text--font-family-roboto explore-online__text">
+                  These collection areas study, exhibit, and care for the
+                  objects in The Met collection.
+                </p>
+              </li>
+              <li class="explore-online__item">
+                <img
+                  src="./src/img/explore-online/explore-online-2.webp"
+                  alt="explore2"
+                  loading="lazy"
+                  class="explore-online__img"
+                />
+                <h3 class="subtitle explore-online__subtitle">Travel</h3>
+                <p class="text text--font-family-roboto explore-online__text">
+                  Travel with The Met connects the Museum's wide and diverse
+                  audience to art, inspiration, and historical perspective.
+                </p>
+              </li>
+              <li class="explore-online__item">
+                <img
+                  src="./src/img/explore-online/explore-online-3.webp"
+                  alt="explore3"
+                  loading="lazy"
+                  class="explore-online__img"
+                />
+                <h3 class="subtitle explore-online__subtitle">
+                  Virtual group tours
+                </h3>
+                <p class="text text--font-family-roboto explore-online__text">
+                  Request a guided tour, reserve admission and lead your own
+                  small group, or request a live virtual tour led by a Museum
+                  guide.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -400,9 +468,74 @@
       >
         <div class="container">
           <div class="contacts__content">
-            <h2 class="title contacts__title contacts__title--mb">
-              Contact us
-            </h2>
+            <h2 class="title contacts__title">Contact us</h2>
+            <div class="contacts__info-wrapper">
+              <div class="contacts__first-block">
+                <h3 class="text text--bold contacts__subtitle">
+                  The Met Fifth Avenue
+                </h3>
+
+                <p class="text text--small contacts__label">Phone</p>
+                <a
+                  class="text text--bold contacts__phone"
+                  href="tel:+12125357710"
+                >
+                  +1 212-535-7710
+                </a>
+
+                <p class="text text--small contacts__label">Address</p>
+                <address
+                  class="text text--bold contacts__address"
+                  href="tel:12125357710"
+                >
+                  1000 Fifth Avenue New York, NY 10028
+                </address>
+              </div>
+              <div class="contacts__second-block">
+                <h3 class="text text--bold contacts__subtitle">
+                  The Met Cloisters
+                </h3>
+
+                <p class="text text--small contacts__label">Phone</p>
+                <a
+                  class="text text--bold contacts__phone"
+                  href="tel:12129233700"
+                >
+                  +1 212-923-3700
+                </a>
+
+                <p class="text text--small contacts__label">Address</p>
+                <address
+                  class="text text--bold contacts__address contacts__address--wide"
+                  href="tel:+12125357710"
+                >
+                  99 Margaret Corbin Drive Fort Tryon Park
+                  <br />
+                  New York, NY 10040
+                </address>
+              </div>
+            </div>
+            <form class="contacts__form">
+              <input
+                type="text"
+                class="input input--text contacts__input"
+                placeholder="Name"
+                name="name"
+              />
+              <input
+                type="email"
+                class="input input--text contacts__input"
+                placeholder="Email"
+                name="email"
+              />
+              <textarea
+                class="input input--text contacts__message"
+                placeholder="Message"
+                name="message"
+              ></textarea>
+
+              <button class="text button contacts__button">Send</button>
+            </form>
           </div>
         </div>
       </section>

@@ -1,0 +1,37 @@
+@use '../../utils/mixins';
+@use '../../utils/vars.scss';
+
+.input {
+  padding-block: 14px;
+  padding-inline: 11px;
+  background: vars.$input-bcg;
+  border: none;
+  outline: none;
+
+  &--text {
+    font-family: vars.$main-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: vars.$input-fz;
+    line-height: vars.$input-lh;
+
+    color: vars.$main-color;
+  }
+  &::placeholder {
+    color: vars.$input-placeholder;
+  }
+
+  &:hover {
+    color: vars.$main-color;
+  }
+
+  &:hover::placeholder {
+    color: vars.$main-color;
+  }
+
+  &:focus {
+    border: 1px solid vars.$main-color;
+
+    color: vars.$main-color;
+  }
+}

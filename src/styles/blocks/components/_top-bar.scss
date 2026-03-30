@@ -10,8 +10,20 @@
   justify-content: space-between;
   align-items: center;
 
+  @include mixins.on-tablet {
+    padding-top: 50px;
+  }
+
   &--mb {
     margin-bottom: 130px;
+
+    @include mixins.on-tablet {
+      margin-bottom: 141px;
+    }
+
+    @include mixins.on-desktop {
+      margin-bottom: 83px;
+    }
   }
 
   &__list {
@@ -29,6 +41,11 @@
     width: 64px;
     height: 46px;
     display: block;
+
+    @include mixins.on-tablet {
+      width: 87px;
+      height: 65px;
+    }
   }
 }
 

@@ -5,16 +5,24 @@
 .menu {
   background-color: vars.$menu-bg;
 
-  &__content {
-    padding-bottom: 31px;
-  }
+  // &__content {
+  // padding-bottom: 31px;
+  // }
 
   &__top {
     margin-bottom: 40px;
+
+    @include mixins.on-tablet {
+      margin-bottom: 55px;
+    }
   }
 
   &__nav {
     margin-bottom: vars.$menu-spacing-bottom;
+
+    @include mixins.on-desktop {
+      margin-bottom: 48px;
+    }
   }
 
   &__list {

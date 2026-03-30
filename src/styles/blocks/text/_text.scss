@@ -1,7 +1,5 @@
 @use '../../utils/vars.scss';
 
-// @use '../../utils/mixins';
-
 .text {
   font-family: vars.$main-font-family;
   font-style: normal;
@@ -11,4 +9,18 @@
 
   /* Main dark */
   color: vars.$main-color;
+
+  &--font-family-roboto {
+    font-family: vars.$second-font-family;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--small {
+    font-size: 14px;
+  }
 }
+
+// top: 3316px;
