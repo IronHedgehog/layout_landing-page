@@ -15,7 +15,12 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Landing Page</title>
+    <link
+      rel="icon"
+      href="./src/img/logo-2x.png"
+      type="image/png"
+    />
+    <title>THE MET</title>
     <link
       rel="stylesheet"
       href="src/styles/main.scss"
@@ -28,13 +33,16 @@
   <!-- #endregion -->
   <body class="page__body">
     <!-- #region HEADER+SIDE-MENU -->
-    <header class="header header--pb">
+    <header
+      id="header"
+      class="header header--pb"
+    >
       <div class="container">
         <div class="header__content">
           <div class="top-bar top-bar--mb">
             <a
               class="top-bar__logo"
-              href="#"
+              href="#header"
             >
               <img
                 class="top-bar__img"
@@ -47,7 +55,7 @@
               <ul class="top-bar__list">
                 <li class="top-bar__item header__item--phone">
                   <a
-                    href="#"
+                    href="tel:12129233700"
                     class="icon icon--phone header__icon-phone"
                   ></a>
                   <ul class="header__contacts">
@@ -98,7 +106,7 @@
           <div class="top-bar menu__top">
             <a
               class="top-bar__logo"
-              href="#"
+              href="#header"
             >
               <img
                 class="top-bar__img"
@@ -399,7 +407,7 @@
             </p>
             <a
               class="text button now-on-view__button"
-              href="#"
+              href="#header"
             >
               View all exhibitions
             </a>
@@ -484,12 +492,16 @@
                 </a>
 
                 <p class="text text--small contacts__label">Address</p>
-                <address
-                  class="text text--bold contacts__address"
-                  href="tel:12125357710"
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=1000+Fifth+Avenue%2C+New+York%2C+NY+10028"
+                  target="_blank"
+                  class="link contacts__address--link"
+                  rel="noopener noreferrer"
                 >
-                  1000 Fifth Avenue New York, NY 10028
-                </address>
+                  <address class="text text--bold contacts__address">
+                    1000 Fifth Avenue New York, NY 10028
+                  </address>
+                </a>
               </div>
               <div class="contacts__second-block">
                 <h3 class="text text--bold contacts__subtitle">
@@ -505,33 +517,46 @@
                 </a>
 
                 <p class="text text--small contacts__label">Address</p>
-                <address
-                  class="text text--bold contacts__address contacts__address--wide"
-                  href="tel:+12125357710"
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=99+Margaret+Corbin+Drive+Fort+Tryon+Park+New+York+NY+10040"
+                  class="link contacts__address--link"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  99 Margaret Corbin Drive Fort Tryon Park
-                  <br />
-                  New York, NY 10040
-                </address>
+                  <address
+                    class="text text--bold contacts__address contacts__address--wide"
+                    href="tel:+12125357710"
+                  >
+                    99 Margaret Corbin Drive Fort Tryon Park
+                    <br />
+                    New York, NY 10040
+                  </address>
+                </a>
               </div>
             </div>
-            <form class="contacts__form">
+            <form
+              class="contacts__form"
+              onsubmit="this.reset(); return false;"
+            >
               <input
                 type="text"
                 class="input input--text contacts__input"
                 placeholder="Name"
                 name="name"
+                required
               />
               <input
                 type="email"
                 class="input input--text contacts__input"
                 placeholder="Email"
                 name="email"
+                required
               />
               <textarea
                 class="input input--text contacts__message"
                 placeholder="Message"
                 name="message"
+                required
               ></textarea>
 
               <button class="text button contacts__button">Send</button>

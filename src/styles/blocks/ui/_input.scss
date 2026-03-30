@@ -7,6 +7,7 @@
   background: vars.$input-bcg;
   border: none;
   outline: none;
+  transition: border vars.$transition-base-time ease-in;
 
   &--text {
     font-family: vars.$main-font-family;
@@ -16,9 +17,11 @@
     line-height: vars.$input-lh;
 
     color: vars.$main-color;
+    transition: color vars.$transition-base-time ease-in;
   }
   &::placeholder {
     color: vars.$input-placeholder;
+    transition: color vars.$transition-base-time ease-in;
   }
 
   &:hover {

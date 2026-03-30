@@ -1,3 +1,6 @@
+@use '../utils/vars.scss';
+@use '../utils/mixins.scss';
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
 }
@@ -20,4 +27,8 @@ img {
   display: block;
   width: 100%;
   height: auto;
+
+  @include mixins.hover(transform, scale(1.07));
+
+  cursor: pointer;
 }

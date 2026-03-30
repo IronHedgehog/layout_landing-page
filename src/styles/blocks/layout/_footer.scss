@@ -11,6 +11,9 @@
   object-fit: cover;
   object-position: top;
 
+  position: sticky;
+  z-index: -1;
+
   @include mixins.on-tablet {
     height: 360px;
     background-image: url(../img/footer/footer-tablet.webp);

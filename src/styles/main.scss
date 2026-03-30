@@ -13,7 +13,6 @@
 @use './blocks/text/subtitle';
 @use './blocks/text/label';
 @use './blocks/text/text';
-@use './blocks/text/input-text';
 @use './blocks/sections/museum-hours';
 @use './blocks/sections/now-on-view';
 @use './blocks/sections/explore-online';
@@ -21,3 +20,4 @@
 @use './blocks/ui/icons';
 @use './blocks/ui/button';
 @use './blocks/ui/input';
+@use './blocks/ui/link';

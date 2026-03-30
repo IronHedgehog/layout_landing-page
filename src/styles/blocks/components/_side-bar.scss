@@ -4,12 +4,17 @@
 
 .menu {
   background-color: vars.$menu-bg;
+  height: 100vh;
+  overflow: auto;
 
   // &__content {
   // padding-bottom: 31px;
-  // }
 
   &__top {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: vars.$menu-bg;
     margin-bottom: 40px;
 
     @include mixins.on-tablet {

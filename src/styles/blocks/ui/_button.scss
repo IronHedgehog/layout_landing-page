@@ -9,6 +9,7 @@
   border: none;
   outline: none;
   background: vars.$accent-main;
+  transition: background-color vars.$transition-base-time ease-in;
 }
 
 .button:hover {
