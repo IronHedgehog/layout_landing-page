@@ -4,8 +4,6 @@
 @use './blocks/layout/container';
 @use './blocks/layout/page';
 @use './blocks/components/header';
-@use './blocks/ui/icons';
-@use './blocks/ui/button';
 @use './blocks/components/top-bar';
 @use './blocks/components/side-bar';
 @use './blocks/layout/main';
@@ -18,3 +16,5 @@
 @use './blocks/sections/now-on-view';
 @use './blocks/sections/explore-online';
 @use './blocks/sections/contacts';
+@use './blocks/ui/icons';
+@use './blocks/ui/button';
